@@ -1,0 +1,259 @@
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.Header{
+    margin: auto;
+    width: 75%;
+}
+.pull-right{
+    float: right;
+}
+.pull-right button{
+    background-color: #e14f42;
+    color: white;
+    width: 100px;
+    height: 30px;
+    margin-top: 25px;
+    margin-right:30px;
+    text-align: center;
+    border:0;
+}
+.pull-left{
+    margin-top: 25px;
+}
+a{
+    text-decoration: none;
+}
+.main-menu{
+    overflow: hidden;
+    flex: 70%;
+    width: 100%;
+    text-align: right;
+}
+.main-menu a{
+    border-right:1px solid rgba(83, 83, 83, 0.5);
+    color:rgb(53, 52, 52);
+    padding: 8px;
+}
+.main-menu .hover{
+    color:green;
+}
+.main-menu .visit{
+    border:0;
+}
+.hr{
+    box-shadow:0px 1px 3px 0px rgba(195, 190, 190, 0.57);
+}
+nav{
+    width: 63%;
+    margin: auto;
+}
+.nav{
+    position: relative;
+    width: 70%;
+    margin: auto;
+}
+.image{
+    position: absolute;
+    bottom: 30%;
+    color:white;
+    width:50%;
+    padding: 2% 5%;
+    background: rgba(0, 0, 0, 0.692);
+    margin: auto 0 auto 49.8%;
+}
+.row{
+    display: flex;
+    width: 70%;
+    font-size: 1em;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.column{
+    display: flex;
+    flex: 60%;
+    width: 100%;
+    margin-right: 120px;
+}
+.columnleft{
+    flex: 40%;
+    width: 100%;
+    margin-right: 5%;
+}
+.columnmiddle{
+    flex: 60%;
+    width: 100%;
+    padding-top: 7%;
+}
+.columnmiddle .para{
+    margin-top: 20px;
+}
+.columnright{
+    flex: 40%;
+    width: 100%;
+}
+.h4,.span{
+    color:#468c7e;
+}
+p{
+    color:rgba(56, 55, 55, 0.863);
+}
+.button{
+    background-color: #60bf93;
+    color:white;
+    border:0;
+    padding: 10px 15px;
+}
+.navbar{
+    display: flex;
+    margin: auto;
+    width: 70%;
+    padding: 100px 0;
+}
+.border-right{
+    display: flex;
+}
+.border1{
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    height: 63px;
+    background: #60bf93;
+    padding: 5px;
+}
+.data,.month{
+    margin-left: 20%;
+    color:white;
+}
+.post{
+    padding-left: 20px;
+}
+.entry-meta,.entry-summary{
+    color: gray;
+    font-size:14px;
+}
+.border-bottom{
+    width:210px;
+    height:240px;
+    background-color: #ededed;
+}
+.panel{
+    padding: 25px 50px;
+    background-color: #60bf93;
+    text-align: center;
+}
+#panel{
+    color:white;
+}
+.box{
+    padding: 20px;
+}
+.box span{
+    color:#838181;
+    font-size: 15px;
+}
+.border-bottom p{
+    margin-left: 45%;
+    color:#838181;
+    font-size: 17px;
+}
+.team-left{
+    flex:25%;
+}
+.team-right{
+    flex:75%;
+    margin-left: 20px;
+}
+/* .clearfix{
+    clear: both;
+} */
+/* .team-left, .team-right{
+    justify-content: center;
+    align-items: baseline;
+} */
+.gallery{
+    display:flex;
+    width: 700px;
+    flex-wrap: wrap;
+    /* height: 800px; */
+    /* background-color: red; */
+}
+img{
+    max-width: 100%;
+}
+.flower{
+    /* float: right; */
+    flex-direction: row;
+    border:8px solid #e6e6e6;
+}
+.gallery .gallery-items{
+    width: 33%;
+    /* float: left; */
+    padding: 5px;
+}
+.stay{
+    margin: auto;
+    /* width: 75%; */
+    display: flex;
+    width: 100%;
+}
+.stay-informed{
+    flex: 50%;
+    width: 100%;
+    margin-right: 1px;
+    padding:5% 0 5% 15%;
+    background: #cbcccc;
+}
+.stay i{
+    color:rgba(56, 55, 55, 0.863);
+}
+.email{
+padding: 7px 80px;
+}
+.button3{
+    color:white;
+    background: #60bf93;
+    border: 0;
+    padding: 5px 20px;
+    margin-left: 220px;
+}
+.stay-connected{
+    flex: 50%;
+    width: 100%;
+    background-color: #CBCBCA;
+    padding: 5% 10%;
+}
+.stay-connected .icon{
+    color: white; 
+    background-color: #60bf93;
+    padding:10px;
+    font-size:1.5em;
+}
+.footer{
+    margin: auto;
+    width: 75%;
+    padding: 35px 0;
+    font-size: 13px;
+    color: gray;
+}
+.footer .icon-top{
+    float: right;
+    color: #60BF93;
+    background-color: white;
+    font-size: 2em;
+}
+@media (max-width:480px){
+    .Header, .nav, .row, .navbar, .stay, .footer, .gallery{
+        flex-direction:column-reverse;
+    }
+    .image{
+        font-size: 5px;
+    }
+}
